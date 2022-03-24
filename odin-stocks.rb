@@ -6,7 +6,8 @@ def stock_picker(array)
         best = {
           profit: sell-buy,
           buy_day: buy_day,
-          sell_day: sell_day+buy_day+1
+# fix the index for the sell day, because we iterate through a slice
+          sell_day: sell_day+buy_day+1 
         }
       end
     end
